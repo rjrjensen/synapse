@@ -1,6 +1,14 @@
-@OrdersExample_HostAddress = http://localhost:5112
+### Get the list of orders
 
-GET {{OrdersExample_HostAddress}}/weatherforecast/
+GET http://localhost:5000/orders
 Accept: application/json
 
-###
+### Send alert that order is in delivered state
+
+GET http://localhost:5000/alert
+Accept: application/json
+
+### Update the order
+
+GET http://localhost:5000/update
+Accept: application/json
